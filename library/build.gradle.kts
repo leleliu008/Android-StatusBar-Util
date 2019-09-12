@@ -23,7 +23,7 @@ android {
         //minSdkVersion(19)
         //targetSdkVersion(28)
         versionCode = 1
-        versionName = "1.0.0"
+        versionName = "1.0.1"
     }
 
     sourceSets {
@@ -58,7 +58,7 @@ dependencies {
     api("com.readystatesoftware.systembartint:systembartint:1.0.3")
 
     //https://github.com/leleliu008/kotlin-ext-android
-    api("com.fpliu:kotlin-ext-android:1.0.1")
+    api("com.fpliu:kotlin-ext-android:1.0.3")
 }
 
 // 这里是groupId,必须填写,一般填你唯一的包名

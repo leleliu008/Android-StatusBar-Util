@@ -3,7 +3,7 @@ package com.fpliu.newton.ui.statusbar
 import android.os.Build
 import android.text.TextUtils
 
-import com.fpliu.kotlin.util.android.getprop
+import com.fpliu.newton.util.getprop
 import java.util.*
 
 object OSUtils {

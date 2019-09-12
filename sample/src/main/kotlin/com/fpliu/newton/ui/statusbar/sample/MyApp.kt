@@ -10,14 +10,15 @@ import android.os.Bundle
 import android.text.TextPaint
 import android.util.TypedValue
 import android.view.View
+import android.view.ViewGroup.LayoutParams.MATCH_PARENT
 import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.TextView
-import com.fpliu.kotlin.util.android.*
 import com.fpliu.newton.log.Logger
 import com.fpliu.newton.ui.statusbar.StatusBarUtil
 import com.fpliu.newton.ui.base.BaseActivity
 import com.fpliu.newton.ui.base.UIUtil
+import com.fpliu.newton.util.*
 import com.jakewharton.rxbinding3.view.clicks
 import com.uber.autodispose.autoDisposable
 
