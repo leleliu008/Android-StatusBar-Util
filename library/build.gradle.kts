@@ -1,21 +1,11 @@
-buildscript {
-    repositories {
-        jcenter { url = uri("https://maven.aliyun.com/repository/jcenter") }
-    }
-    dependencies {
-        //对android-maven-gradle-plugin和gradle-bintray-plugin两个插件的包装、简化插件
-        //https://github.com/leleliu008/BintrayUploadAndroidGradlePlugin
-        classpath("com.fpliu:BintrayUploadGradlePlugin:1.0.7")
-    }
-}
-
-apply {
-    plugin("com.fpliu.bintray")
-}
-
 plugins {
     id("com.android.library")
+    
     kotlin("android")
+
+    //https://github.com/leleliu008/BintrayUploadGradlePlugin
+    //https://plugins.gradle.org/plugin/com.fpliu.bintray
+    id("com.fpliu.bintray").version("1.0.7")
 
     //用于构建aar和maven包
     //https://github.com/dcendents/android-maven-gradle-plugin
@@ -79,7 +69,7 @@ version = android.defaultConfig.versionName ?: "1.0.0"
 
 val rootProjectName: String = rootProject.name
 
-(project.extensions.getByName("bintrayUploadExtension") as com.fpliu.gradle.BintrayUploadExtension).apply {
+bintrayUploadExtension {
     developerName = "leleliu008"
     developerEmail = "leleliu008@gamil.com"
 
