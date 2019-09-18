@@ -5,7 +5,7 @@ plugins {
 
     //https://github.com/leleliu008/BintrayUploadGradlePlugin
     //https://plugins.gradle.org/plugin/com.fpliu.bintray
-    id("com.fpliu.bintray").version("1.0.7")
+    id("com.fpliu.bintray").version("1.0.8")
 
     //用于构建aar和maven包
     //https://github.com/dcendents/android-maven-gradle-plugin
@@ -23,7 +23,7 @@ android {
         //minSdkVersion(19)
         //targetSdkVersion(28)
         versionCode = 1
-        versionName = "1.0.1"
+        versionName = "1.0.2"
     }
 
     sourceSets {
@@ -58,7 +58,7 @@ dependencies {
     api("com.readystatesoftware.systembartint:systembartint:1.0.3")
 
     //https://github.com/leleliu008/kotlin-ext-android
-    api("com.fpliu:kotlin-ext-android:1.0.3")
+    api("com.fpliu:kotlin-ext-android:1.0.4")
 }
 
 // 这里是groupId,必须填写,一般填你唯一的包名
