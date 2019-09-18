@@ -4,8 +4,10 @@
 
 ### 引用：
 ```
-implementation("com.fpliu:Android-StatusBar-Util:1.0.0")
+implementation("com.fpliu:Android-StatusBar-Util:1.0.2")
 ```
+[bintray](https://bintray.com/fpliu/newton/Android-StatusBar-Util)
+
 
 ### 使用：
 ```
